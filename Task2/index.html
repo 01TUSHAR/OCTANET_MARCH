@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Todo List">
+                <h1>TODO List</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Contacts</a></li>
+                <li><a href="">SignIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <div class="list">
+            <div class="content">
+                <div class="container">
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+
+                    </div>
+                    <div class="todo">
+                        <input class="todo-task" type="text" placeholder="Enter a New Task....">
+                        <input class="todo-check" type="checkbox">
+                        <button class="delete-btn">Delete</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const deleteButtons = document.querySelectorAll('.delete-btn');
+            deleteButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    const todoTaskInput = button.previousElementSibling.previousElementSibling;
+                    todoTaskInput.value = '';
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
